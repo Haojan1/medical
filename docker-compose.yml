@@ -1,0 +1,17 @@
+version: '1'
+services:
+  app:
+    build: .
+    container_name: sample_app
+    command: yarn dev
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - mynetwork
+    restart: always
+
+networks:
+  mynetwork:
+    driver: bridge

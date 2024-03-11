@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+yarn-error.log
+build
+.DS_Store
+.env
+*.log
+*.swp
+*.swo
+npm-debug.log*
